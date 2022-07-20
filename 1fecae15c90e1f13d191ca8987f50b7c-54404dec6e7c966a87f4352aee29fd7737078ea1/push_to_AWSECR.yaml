@@ -39,7 +39,7 @@ steps:
 
 - task: ECRPushImage@1
   inputs:
-    awsCredentials: 'AWS_Service'
+    awsCredentials: 'aws_service'
     regionName: $(AWS_REGION)
     imageSource: 'imagename'
     sourceImageName: $(AWS_ECR_MAGE_URI)
